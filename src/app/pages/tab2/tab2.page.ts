@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AnyForUntypedForms } from '@angular/forms';
+// Removed incorrect import statement
 import { NewsService } from 'src/app/services/news.service';
 // Importo la interfaz
 import { NewsResp, Article } from '../../interfaces/index';
