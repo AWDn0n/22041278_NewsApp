@@ -6,11 +6,12 @@ import { Article } from '../../interfaces/index';
   templateUrl: './article.component.html',
   styleUrls: ['./article.component.scss'],
 })
-export class ArticleComponent implements OnInit {
-  // Inyecto articulos usando la interfaz, ver linea 2
-  @Input() article:Article ;
-  @Input() index: number;
 
+export class ArticleComponent implements OnInit {
+
+  @Input() article!:Article;
+  @Input() index!:number;
+  
   constructor() { }
 
   ngOnInit() {}
