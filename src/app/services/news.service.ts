@@ -16,7 +16,7 @@ export class NewsService {
   constructor(private http: HttpClient) { }
 
   getTopNews():Observable<Article[]>{
-    return this.http.get<NewsResp>(`https://newsapi.org/v2/top-headlines?country=us&category=business`, {
+    return this.http.get<NewsResp>(`https://newsapi.org/v2/top-headlines?country=us&category=general`, {
       params :{apiKey}
     }).pipe(map(( { articles } )=> articles));
   }
